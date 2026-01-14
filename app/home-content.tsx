@@ -44,7 +44,7 @@ const getProductTitle = (link?: string, productName?: string): string => {
   if (!link) return productName || "상품"
 
   // Extract product name from common e-commerce URLs
-  if (link.includes("coupang")) {
+  if (link.includes("musinsa")) {
     const match = link.match(/[?&]q=([^&]+)/)
     if (match) return decodeURIComponent(match[1])
   }
